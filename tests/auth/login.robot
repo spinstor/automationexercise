@@ -30,7 +30,7 @@ Login With Valid Credentials
     ...                Uses the stored MongoDB credentials when launched with
     ...                bin\run_mongo.cmd; otherwise provisions a throw-away
     ...                account through the API.
-    [Tags]    smoke    kasira
+    [Tags]    smoke
     ${mongo_email}=    Get Variable Value    ${LOGIN_EMAIL}
     IF    $mongo_email != ${None}
         ${expected_name}=    Ensure Account Exists Via Api
