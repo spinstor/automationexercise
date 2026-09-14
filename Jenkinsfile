@@ -68,8 +68,10 @@ pipeline {
                 bat 'if not exist .venv python -m venv .venv'
                 bat '.venv\\Scripts\\python.exe -m pip install --upgrade pip'
                 bat '.venv\\Scripts\\python.exe -m pip install -r requirements.txt'
-                if (env.MONGO_URI) {
-                    bat "set MONGO_URI=${env.MONGO_URI} && echo MONGO_URI overridden for this build"
+                script {
+                    if (env.MONGO_URI) {
+                        bat "set MONGO_URI=${env.MONGO_URI} && echo MONGO_URI overridden for this build"
+                    }
                 }
             }
         }
