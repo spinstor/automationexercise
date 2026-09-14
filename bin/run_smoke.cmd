@@ -6,6 +6,6 @@ REM ============================================================
 setlocal
 cd /d "%~dp0.."
 
-robot --outputdir output --tag smoke --log log_smoke.html --report report_smoke.html tests %*
+robot --listener resources/common/console_listener.py --outputdir output --tag smoke --log log_smoke.html --report report_smoke.html tests %*
 
 endlocal

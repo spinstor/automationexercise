@@ -28,5 +28,5 @@ shift
 goto :collect
 
 :execute
-robot --outputdir output --log log_suite.html --report report_suite.html %REST% %TARGET%
+robot --listener resources/common/console_listener.py --outputdir output --log log_suite.html --report report_suite.html %REST% %TARGET%
 endlocal

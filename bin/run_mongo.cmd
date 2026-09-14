@@ -43,7 +43,7 @@ shift
 goto :collect
 
 :execute
-robot --outputdir output --log log_suite.html --report report_suite.html --variablefile config\mongo_login.py %REST% %TARGET%
+robot --listener resources/common/console_listener.py --outputdir output --log log_suite.html --report report_suite.html --variablefile config\mongo_login.py %REST% %TARGET%
 set "CM_EXIT=%ERRORLEVEL%"
 
 if "%STARTED_MONGOD%"=="1" (
