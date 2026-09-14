@@ -1,0 +1,22 @@
+# Robot Framework and Selenium dependencies
+robotframework==7.4.2
+robotframework-seleniumlibrary==6.9.0
+Selenium==4.49.0
+
+# API testing
+robotframework-requests==0.9.7
+requests==2.34.2
+
+# MongoDB-driven credentials (config/mongo_login.py)
+pymongo==4.18.1
+
+# Optional: test data generation
+robotframework-faker==6.0.0
+Faker
+
+# Optional: parallel test execution
+robotframework-pabot
+robotframework-tidy
+
+# (Login credentials are stored in MongoDB, not in this repository.
+#  See config\mongo_login.py and scripts\seed_mongo.py.)

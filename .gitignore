@@ -1,0 +1,30 @@
+# Output and reports
+output/
+**/output/
+*.html
+*.xml
+*.log
+.DS_Store
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.egg-info/
+.venv/
+venv/
+env/
+
+# IDE
+.vscode/
+.idea/
+*.iml
+
+# Secrets
+.env
+*.pem
+*.key
+
+# Robot temp
+*.tmp
+*.png
